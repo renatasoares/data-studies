@@ -1,4 +1,4 @@
-### Chapter 1
+### First Steps
 
 #### Features
 
@@ -22,3 +22,29 @@
 5. [Security](https://www.postgresql.org/support/security/).
 
 6. SQL and NoSQL data models.
+
+#### Tools
+
+1. [pgAdmin](https://www.pgadmin.org/)
+2. [OmniDB](https://omnidb.org/)
+3. [psql](https://www.postgresql.org/docs/13/app-psql.html)
+
+  3.1. There are two type of commands: psql meta-commands and SQL.
+
+  3.2. `\?`: provides help on psql meta-commands.
+
+  3.3. `\h`: provides help on SQL commands.
+
+  ```
+  banco=> \h DELETE
+Command:     DELETE
+Description: delete rows of a table
+Syntax:
+[ WITH [ RECURSIVE ] with_query [, ...] ]
+DELETE FROM [ ONLY ] table_name [ * ] [ [ AS ] alias ]
+    [ USING from_item [, ...] ]
+    [ WHERE condition | WHERE CURRENT OF cursor_name ]
+    [ RETURNING * | output_expression [ [ AS ] output_name ] [, ...] ]
+URL: https://www.postgresql.org/docs/13/sql-delete.html
+```
+  3.4. Execution timing using `\timing` command.
